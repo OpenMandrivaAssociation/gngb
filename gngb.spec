@@ -3,7 +3,7 @@
 %define version 0.%{beta}
 %define release %mkrel 2
 
-Summary: Gngb - Color Gameboy emulator
+Summary: - Color Gameboy emulator
 Name: %{name}
 Version: %{version}
 Release: %{release}
