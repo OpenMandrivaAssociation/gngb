@@ -1,27 +1,18 @@
-%define name gngb
-%define beta 20060309
 %define version 0.%{beta}
-%define release %mkrel 2
 
-Summary: - Color Gameboy emulator
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Summary: Color Gameboy emulator
+Name:    gngb
+Version: 0.%{beta}
+Release: 3
 BuildRequires: SDL-devel
 BuildRequires: bzip2-devel
 BuildRequires: zlib-devel
-%if %mdkversion >= 200700
 BuildRequires: mesagl-devel
 BuildRequires: mesaglu-devel
-%else
-BuildRequires: X11-devel
-BuildRequires: MesaGLU-devel
-%endif
 Source0: http://m.peponas.free.fr/gngb/download/%{name}-%{beta}.tar.bz2
 Group: Emulators
 License: GPLv2
 URL: http://m.peponas.free.fr/gngb/
-BuildRoot: %{_tmppath}/%{name}-build
 
 %description
 Gngb is a Color Gameboy emulator for Linux written in C with the SDL.
@@ -35,17 +26,14 @@ It support most of Gameboy and Color Gameboy games.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog INSTALL README TODO sample_gngbrc
 %attr(0755,root,games) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 
 %clean
-rm -rf %{buildroot}
 
 
 
