@@ -3,7 +3,7 @@
 Summary:	Color Gameboy emulator
 Name:		gngb
 Version:	0.%{beta}
-Release:	4
+Release:	5
 License:	GPLv2+
 Group:		Emulators
 Url:		http://m.peponas.free.fr/gngb/
