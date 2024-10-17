@@ -6,7 +6,7 @@ Version:	0.%{beta}
 Release:	5
 License:	GPLv2+
 Group:		Emulators
-Url:		http://m.peponas.free.fr/gngb/
+Url:		https://m.peponas.free.fr/gngb/
 Source0:	http://m.peponas.free.fr/gngb/download/%{name}-%{beta}.tar.bz2
 BuildRequires:	bzip2-devel
 BuildRequires:	pkgconfig(gl)
