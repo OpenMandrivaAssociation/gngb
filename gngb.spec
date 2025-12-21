@@ -8,6 +8,11 @@ License:	GPLv2+
 Group:		Emulators
 Url:		https://m.peponas.free.fr/gngb/
 Source0:	http://m.peponas.free.fr/gngb/download/%{name}-%{beta}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	bzip2-devel
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
